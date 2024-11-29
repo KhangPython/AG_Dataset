@@ -6,7 +6,7 @@ subprocess.check_call([sys.executable, "-m", "pip", "install", "IPython"])
 from IPython.display import Image, display
 
 def run_yolo(hinh_thu, task, model):
-    if task = 'detect':
+    if task == 'detect':
         os.system(f'yolo task=detect mode=predict model={model} conf=0.25 source={hinh_thu} save=True')
         base_path = '/content/runs/detect'
     else:
